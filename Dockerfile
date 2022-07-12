@@ -4,8 +4,8 @@ RUN mkdir /build
 WORKDIR /build
 
 RUN export GO111MODULE=on
-RUN go get github.com/
-RUN cd /build && git clone
+RUN go get github.com/AlfarrelIndrawan/GoWebAPI
+RUN cd /build && git clone github.com/AlfarrelIndrawan/GoWebAPI.git
 
 RUN cd /build/GoWebAPI/main && go build
 
